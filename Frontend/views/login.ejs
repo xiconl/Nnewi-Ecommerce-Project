@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h2><a href="/">E-Commerce Web App</a></h2>
+        <!-- <nav>
+            <a href="/">Homepage</a>
+        </nav> -->
+    </header>
+
+    <main>
+        <h3>Login Page</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ex iure expedita deleniti vero. Vitae.</p>
+        <form action="./login" method="post">
+            <% errors.forEach(error => { %>
+                <p class="notice"><%= error %></p>
+            <% }); %>
+        <fieldset>
+            <legend>Log into your account </legend>
+            <label for="username"><small>Username</small></label>
+            <input type="text" id="username" name="username">
+
+            <label for="password"><small>Password</small></label>
+            <input type="password" id="password" name="password">
+
+            <br>
+            <button>Login</button>
+        </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <small>&copy; E-Commece web App</small>
+    </footer>
+</body>
+</html>
